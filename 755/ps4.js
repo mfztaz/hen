@@ -86,7 +86,7 @@ function setupRW() {
 }
 
 function toggle_payload(){
-	document.getElementById("progress").innerHTML='HEN GOLD 1.1 OK EXIT... <br>'
+	document.getElementById("progress").innerHTML='WAIT FOR Complete HEN GOLD 1.1 OK AND EXIT... <br>'
 	preloadScripts(['preloader.js', 'hen.js', 'loader.js']);
 	
 	if(window.postPayload)
