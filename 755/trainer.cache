@@ -1,5 +1,5 @@
 CACHE MANIFEST 
-# v2.5.5 Self-Host 
+# PS4 Offline Cache 09-24-2021
 
 exploit.js
 hen.js
@@ -15,3 +15,8 @@ utils.js
 
 NETWORK: 
 * 
+
+SETTINGS:
+prefer-online:
+
+# Date: 2021-09-24 15:16:00 GMT-6
