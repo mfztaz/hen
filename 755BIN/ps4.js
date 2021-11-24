@@ -86,8 +86,8 @@ function setupRW() {
 }
 
 function toggle_payload(){
-		document.getElementById("progress").innerHTML='HEN GOLD 1.1 OK EXIT... <br>'
-		PLfile = 'goldhen755.bin';
+		document.getElementById("progress").innerHTML='Wait Complete HEN GOLD 1.1 AND EXIT... <br>'
+		PLfile = 'goldhen2.bin';
 		preloadScripts(['loaderx.js']);
 		
 	if(window.postPayload)
