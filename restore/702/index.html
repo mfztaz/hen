@@ -44,9 +44,15 @@
 		  color: white;
 		  font-size: 35px;
 		  padding-top: 5px;
-		}
+		}	
 	</style>
 	<body onload="go()" class="bg">
+		<script>
+		if(window.applicationCache.status==2){localStorage.is702Cached=true;}
+			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Page Caching Started!!";localStorage.is702Cached=false;};
+			window.applicationCache.onprogress=function(a){document.getElementById("myBar").style.width=(Math.round(100*(a.loaded/a.total)))+"%";document.getElementById("myBar").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
+			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Page Cached Successfully!!";localStorage.is702Cached=true;setTimeout(function(){document.getElementById("progress").innerHTML="Turn Off the Internet & Reopen the Page to Run the Exploit!!"; }, 1500);};
+		</script>
 		<script>
 			var width = 0;
 			function frame1() {
@@ -64,9 +70,7 @@
 		</script>
 		<script>
 		function print(){}
-
 		var scriptCode = '';
-
 		function preloadScripts(lst)
 		{	
 			scriptCode = '';
@@ -78,13 +82,11 @@
 				scriptCode += xhr.responseText + '\n';
 			}
 		}
-        
+
 		function done(){
             toggle_payload();
 		}
-		
-		window.midExploit = function()
-
+			window.midExploit = function()
 		{
 			preloadScripts(['exploit.js', 'jb.js']);
 		}
@@ -104,7 +106,6 @@
 			setTimeout(function()
 			{	
 				eval.call(window, scriptCode);
-				
 			}, 100);
 
 		};
@@ -113,7 +114,7 @@
 		<script src="utils.js"></script>
 		<script src="int64.js"></script>
 		<script src="ps4.js"></script>
-        <h1 id="progress" class="titlehead">Loading.. Please Wait !!</h1><br>
+		<h1 id="progress" class="titlehead">Loading.. Please Wait !!</h1><br>
 		<button style="opacity:0" id="input1" onfocus="handle2()"></button>
 		<button style="opacity:0" id="input2"></button>
 		<button style="opacity:0" id="input3" onfocus="handle2()"></button>
@@ -121,7 +122,7 @@
 		<option value="value1">Value1</option>
 		</select>
 		<h1 id="myProgress">
-		  <div id="myBar">0%</div>
+		<div id="myBar">0%</div>
 		</h1>
 		<table id="load" align="center" style="width:0px;margin-top:0px;">
 		</table>
