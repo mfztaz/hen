@@ -1,14 +1,16 @@
 CACHE MANIFEST 
+# v2.5.5 Self-Host 
 
-CACHE: 
-702old.html
+exploit.js
 goldhen2.js
+index-702.html
 index.html
 int64.js
+jb.js
+loader.js
+preloader.js
+ps4.jpg
 ps4.js
-rop.js
-Style.css
-userland.js
 utils.js
 
 NETWORK: 
