@@ -1,5 +1,4 @@
 CACHE MANIFEST 
-# v2.5.5 Self-Host 
 
 exploit.js
 goldhen2.js
@@ -12,6 +11,3 @@ preloader.js
 ps4.jpg
 ps4.js
 utils.js
-
-NETWORK: 
-* 
