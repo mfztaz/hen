@@ -45,15 +45,15 @@ function consolecheck(){
 				break;				
 
 			case ps4fwCompat[5]:
-			   document.location.href="https://wolf-5.github.io/hen/restore/755b/index.html"
+			   document.location.href="https://wolf-5.github.io/hen/restore/755/index.html"
 				break;
 				
 			case ps4fwCompat[6]:
-			    document.location.href="https://wolf-5.github.io/hen/restore/755b/index.html"
+			    document.location.href="https://wolf-5.github.io/hen/restore/755/index.html"
 				break;
 			
 			case ps4fwCompat[7]:
-			   document.location.href="https://wolf-5.github.io/hen/restore/755b/index.html"
+			   document.location.href="https://wolf-5.github.io/hen/restore/755/index.html"
 				break;
 															
 			default:
